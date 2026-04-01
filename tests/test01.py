@@ -6,4 +6,3 @@ def two_times(numberList):
 
 result = two_times([1, 2, 3, 4])
 print(result)
-
