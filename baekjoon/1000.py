@@ -5,4 +5,4 @@
 A, B = map(int, input().split())
 
 # 합계 출력
-print(A + B)
+print(A + B) 
