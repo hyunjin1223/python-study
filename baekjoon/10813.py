@@ -1,21 +1,17 @@
 # problem: 10813
 # tier: bronze
 
-# 바구니 수 N, 교환 횟수 M 입력
+# N개 바구니, M번 교환 입력
 N, M = map(int, input().split())
 
-# 바구니 배열 초기화
-arr = [0] * N
+# 1~N번 공 초기화
+arr = [i + 1 for i in range(N)]
 
-# 1~N 번호 채우기
-for i in range(N):
-    arr[i] = i + 1
-
-# M번 교환
+# M번 공 교환 수행
 for _ in range(M):
-    # 교환할 바구니 번호 입력
+    # 교환할 인덱스 입력
     i, j = map(int, input().split())
-    # 값 교환
+    # 값 서로 맞바꿈
     arr[i-1], arr[j-1] = arr[j-1], arr[i-1]
 
 # 결과 출력
