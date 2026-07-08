@@ -14,5 +14,3 @@ def factorial(num):
     return num * factorial(num - 1)
 
 print(factorial(n))
-
-# recursive factorial for small N
