@@ -31,4 +31,4 @@ for i in range(2, n + 1):
         dp[i][j] %= mod
 
 # 마지막 숫자에 상관없이 모두 더함
-print(sum(dp[n]) % mod)
+print(sum(dp[n]) % mod) 
